@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ejemplo-educacionit
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-nginx
+  namespace: ejemplo-educacionit
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
