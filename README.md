@@ -42,7 +42,7 @@ kubctl apply -f pod-1.yaml
 ### revisar si esta funcionando
 
 ```bash
-kubectl get pod -n clase43
+kubectl get pod -n ejemplo-educacionit
 ```
 
 
