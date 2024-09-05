@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ejemplo-educacionit-pod-service
+  namespace: ejemplo-educacionit
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: ejemplo-educacionit
